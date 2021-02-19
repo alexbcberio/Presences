@@ -141,7 +141,7 @@ presence.on(`UpdateData`, async () => {
           `body div div div section div md-content div div div div h2 span.fs-18`
         ).innerHTML; //the anime episode for same reason as above
         code = titleName.slice(21); //cut the title to get the room code
-        presenceData.details = `In Watch2Gether room: ${code}`;
+        presenceData.details = `In Watch2Gether room`;
         if (!anime) {
           //if there was no 'wname' aka. no anime selected
           presenceData.state = `Selecting anime...`;
